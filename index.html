@@ -248,14 +248,33 @@
                 transform: translateY(0);
             }
         }
-        @media (max-width: 768px) {
-            .nav-links li {
-                display: block;
-                margin: 10px 0;
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 36px;
             }
-            
+            .hero-content p {
+                font-size: 18px;
+            }
+            .blog-posts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 28px;
+            }
+            .hero-content p {
+                font-size: 16px;
+            }
             .blog-posts {
                 grid-template-columns: 1fr;
+            }
+            .navbar {
+                padding: 10px;
+            }
+            .cta-btn {
+                font-size: 16px;
             }
         }
 
